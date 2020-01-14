@@ -1,0 +1,18 @@
+.ulNoStyle {
+    text-align: center;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.topics {
+    background-color: #007BFF;
+    padding: 10px;
+}
+
+.skill {
+    font-weight: bold;
+}
+
+li>ul {
+    list-style: square;
+}

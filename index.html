@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>CV. Creator</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg  bg-dark navbar-dark  " id="navbar">
+        <a class="navbar-brand" href="#"><span class="badge badge-pill badge-danger">CV <br> Creator</span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crdPD">Personal Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crdJobObj">Job objective</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crdEdu">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crdExp">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crdLang">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crdSkill">Skills</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--end of Nav Bar -->
+    <div class="row hdr ">
+        <img src="Images/front.jpg" alt="" class="img-fluid" id="imgHead">
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+
+
+        <form action="pages/result.html" onsubmit="sbmt">
+            <div class="accordion" id="accordionForm">
+                <!-- Personal Data -->
+                <div class="card   mb-3" id="crdPD">
+                    <div class="card-header text-white bg-dark " id="headingPD">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePD" aria-expanded="true" aria-controls="collapsePD">
+                        Personal Data  </button>
+                        </h2>
+                    </div>
+                    <div id="collapsePD" class="collapse show" aria-labelledby="headingPD" data-parent="#accordionForm">
+
+                        <div class="card-body bg-secondary ">
+                            <div class="row">
+
+                                <!-- Photo -->
+
+                                <div class="col-8 offset-md-1  col-md-3  order-md-12" id="photo">
+                                    <div class="img">
+                                        <img src="/Images/img_avatar1.png" class="img-fluid" alt="cv photo" id="image">
+
+                                        <div class="custom-file">
+                                            <input type="file" onchange="previewFile()" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8 order-md-1">
+                                    <!-- Name -->
+                                    <div class="form-group ">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control user " id="name">
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-5 ">
+
+                                            <!-- DOB -->
+
+                                            <div class="form-group ">
+                                                <label for="dateB">Date of birth:</label>
+                                                <input type="date" class="form-control user" id="dateB">
+                                            </div>
+
+                                            <!-- adress -->
+
+                                            <div class="form-group">
+                                                <label for="address">Address:</label>
+                                                <input type="text" class="form-control user" id="address">
+                                            </div>
+
+                                            <!-- Marital -->
+
+                                            <div class="form-group">
+                                                <label for="mStatus"> Marital Status:</label>
+                                                <select class="form-control user" id="mStatus">
+                        <option value="Single">Single</option>
+                        <option value="Engaged">Engaged</option>
+                        <option value="Married">Married</option>
+                    </select>
+                                            </div>
+                                        </div>
+                                        <!--phone -->
+
+                                        <div class="col-md-5 ">
+
+                                            <div class="form-group">
+                                                <label for="phone">Phone Number:</label>
+                                                <input type="tel" class="form-control user" id="phone">
+                                            </div>
+
+                                            <!-- email-->
+
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control user" id="email">
+
+                                                <!-- gender -->
+
+                                            </div>Gender: <br>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="gender" value="Male" checked>Male
+                            </label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                              <input type="radio" class="form-check-input" value="Female" name="gender">Female
+                            </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--job objective-->
+                <div class="card mb-3 " id="crdJobObj">
+                    <div class="card-header text-white bg-dark" id="headingObj">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseObj" aria-expanded="false" aria-controls="collapseSkill">
+                                Job Objective
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseObj" class="collapse" aria-labelledby="headingObj" data-parent="#accordionForm">
+
+                        <div class="card-body bg-secondary">
+                            <h5 class="card-title">Job Objective</h5>
+                            <p class="card-text"> <textarea class="form-control user" name="Job_objective" id="jobObj"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Education-->
+
+
+                <div class="card mb-3" id="crdEdu">
+                    <div class="card-header text-white bg-dark" id="headingEdu">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEdu" aria-expanded="false" aria-controls="collapseEdu">
+                                Education
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEdu" class="collapse" aria-labelledby="headingEdu" data-parent="#accordionForm">
+
+                        <div class="card-body bg-secondary">
+                            <div id="dblEdu">
+
+                                <div class="row">
+
+                                    <div class="form-group col-md-6">
+                                        <label for="certification">Certification name:</label>
+                                        <input type="text" class="form-control certification">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="department"> Department:</label>
+                                        <input type="text" class="form-control department">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="grade"> Grade: </label>
+                                        <input type="text" class="form-control grade">
+                                    </div>
+
+
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="univeristy">Univeristy: </label>
+                                        <input type="text" class="form-control univeristy">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="yGrauation">Year of graduation: </label>
+                                        <input type="text" class="form-control yGrauation">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="btnAdd">
+                                <button type="button" class="btn btn-danger btn-sm" id="btnEdu">Add more</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--Work Experience-->
+                <div class="card mb-3" id="crdExp">
+                    <div class="card-header text-white bg-dark" id="headingExp">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseExp" aria-expanded="false" aria-controls="collapseExp">
+                                Work Experience
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseExp" class="collapse" aria-labelledby="headingExp" data-parent="#accordionForm">
+
+                        <div class="card-body bg-secondary">
+                            <div id="dblExp">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle">Job title:</label>
+                                                    <input type="text" class="form-control jobTitle">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6">
+
+                                                <div class="form-group">
+                                                    <label for="comName"> Company name:</label>
+                                                    <input type="text" class="form-control comName">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="dtFrom">From:</label>
+                                                    <input type="date" class="form-control dtFrom">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="dtTo">To:</label>
+                                                    <input type="date" class="form-control dtTo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobDscrp">Job description:</label>
+                                                    <textarea class="form-control jobDscrp"> </textarea>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btnAdd">
+                                <button type="button" class="btn btn-danger btn-sm" id="btnExp">Add more</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Languages-->
+
+                <div class="card mb-3" id="crdLang">
+                    <div class="card-header text-white bg-dark" id="headingLang">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseLang" aria-expanded="false" aria-controls="collapseLang">
+                                Languages
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseLang" class="collapse" aria-labelledby="headingLang" data-parent="#accordionForm">
+
+                        <div class="card-body bg-secondary">
+                            <div class="row" id="dblLang">
+                                <div class="form-group col-5">
+                                    <label for="lang">Language:</label>
+                                    <input type="text" class="form-control lang">
+                                </div>
+                                <div class="form-group col-5">
+                                    <label> Level:</label>
+                                    <select class="form-control level">
+                <option value="Mother Tongue">Mother Tongue</option>
+                <option value="Fluent">Fluent</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Very good">Very good</option>
+                <option value="Good">Good</option>
+               <!-- <option value="Other">Other</option> -->
+            </select>
+
+                                </div>
+
+                            </div>
+                            <div class="btnAdd">
+                                <button type="button" class="btn btn-danger btn-sm" id="btnLang">Add more</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--Other skills-->
+                <div class="card mb-3" id="crdSkill">
+
+                    <div class="card-header text-white bg-dark" id="headingSkill">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSkill" aria-expanded="false" aria-controls="collapseSkill">
+                                Other skills
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSkill" class="collapse" aria-labelledby="headingSkill" data-parent="#accordionForm">
+
+                        <div class="card-body bg-secondary">
+                            <div class="row" id="dblSkill">
+                                <div class="form-group col-md-5 col-10">
+                                    <label for="skill">Add skill:</label>
+                                    <input type="text" class="form-control skill">
+                                </div>
+                                <div class="form-group col-md-5  col-10">
+                                    <label for="skillDscrp">Skill description</label>
+                                    <textarea class="form-control skillDscrp"> </textarea>
+                                </div>
+                            </div>
+                            <div class="btnAdd">
+                                <button type="button" class="btn btn-danger btn-sm" id="btnSkill">Add more</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-danger" id="btn">Show cv</button>
+
+        </form>
+    </div>
+
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+
+
+</body>
+
+</html>

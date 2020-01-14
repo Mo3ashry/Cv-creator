@@ -1,0 +1,36 @@
+#navbar {
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.hdr {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/*
+.card {
+    background-color: #916dd5;
+}*/
+
+body {
+    background-color: #F5F5F5;
+}
+
+.form-control {
+    background-color: #F6F6F6;
+}
+
+.card-body {
+    color: #0f4c75;
+}
+
+.btn-link {
+    color: #fff;
+}
